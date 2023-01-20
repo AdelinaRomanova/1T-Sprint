@@ -1,0 +1,174 @@
+/* fonts */
+/* light */
+@font-face {
+  font-family: "Roboto light";
+  src: local("Roboto light"), url(fonts/Roboto-Light.ttf);
+}
+.title,
+.subtitle {
+  font-family: Roboto light;
+}
+
+.title {
+  text-align: center;
+  margin-top: 2%;
+  -webkit-animation: opasity 5s;
+          animation: opasity 5s;
+}
+
+@-webkit-keyframes opasity {
+  from {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes opasity {
+  from {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+.subtitle {
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  margin-top: 1%;
+  margin-left: 15%;
+  padding: 1%;
+  font-size: 25px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  -webkit-animation: opasity 5s;
+          animation: opasity 5s;
+  transition: 0.5s;
+}
+
+.subtitle:hover {
+  scale: 1.03;
+  box-shadow: 3px 3px 15px rgb(149, 147, 147);
+}
+
+.subtitle::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 35px solid transparent;
+  border-right-color: antiquewhite;
+  top: 3%;
+  left: -70px;
+}
+
+.ansver {
+  margin-left: 45%;
+}
+
+.ansver::before {
+  margin-left: 100%;
+  left: 0;
+  border: 35px solid transparent;
+  border-left-color: antiquewhite;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+
+.paragraphs {
+  margin-top: 2%;
+  text-align: center;
+  font-family: Roboto light;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  10% {
+    rotate: 15deg;
+  }
+  20% {
+    rotate: 0deg;
+  }
+  30% {
+    rotate: -15deg;
+  }
+  40% {
+    rotate: 0deg;
+  }
+  60% {
+    rotate: 7deg;
+  }
+  70% {
+    rotate: 0deg;
+  }
+  80% {
+    rotate: -7deg;
+  }
+  to {
+    rotate: 0deg;
+  }
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  10% {
+    rotate: 15deg;
+  }
+  20% {
+    rotate: 0deg;
+  }
+  30% {
+    rotate: -15deg;
+  }
+  40% {
+    rotate: 0deg;
+  }
+  60% {
+    rotate: 7deg;
+  }
+  70% {
+    rotate: 0deg;
+  }
+  80% {
+    rotate: -7deg;
+  }
+  to {
+    rotate: 0deg;
+  }
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2%;
+  list-style: none;
+}
+.list_item {
+  display: inline-block;
+  padding: 1%;
+  background-color: rgb(201, 231, 243);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.list .list_item:hover {
+  -webkit-animation: rotate 1.5s;
+          animation: rotate 1.5s;
+}/*# sourceMappingURL=style.css.map */
